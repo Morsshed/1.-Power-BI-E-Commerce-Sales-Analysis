@@ -32,8 +32,9 @@ This project includes Sales Analysis &amp; Forecasting, Territory Analysis, Cust
    [Total Revenue]-[Revenue Target]
 
    ### Orders
-   Number of Orders = DISTINCTCOUNT(FactSales[OrderNumber])
-   AOV = DIVIDE([Total Revenue], [# of Orders], BLANK())
+   
+                                    Number of Orders = DISTINCTCOUNT(FactSales[OrderNumber])
+                                    AOV = DIVIDE([Total Revenue], [# of Orders], BLANK())
    AVG Basket Size = DIVIDE([Quantity Ordered], [# of Orders], BLANK())
    Order Target = [PM Order]*1.1
    Order Target Gap = [# of Orders]- [Order Target]
