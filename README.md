@@ -29,9 +29,32 @@ This project includes Sales Analysis &amp; Forecasting, Territory Analysis, Cust
                                     AVG Basket Size = DIVIDE([Quantity Ordered], [# of Orders], BLANK())
                                     Order Target = [PM Order]*1.1
                                     Order Target Gap = [# of Orders]- [Order Target]
-                                    PM Order = CALCULATE([# of Orders], DATEADD(DimDate[Date],-1,MONTH))
                                     Price Per Item = DIVIDE([Total Revenue],[Quantity Ordered], BLANK())
                                     Quantity Ordered = sum(FactSales[OrderQuantity])
+
+   ### Customers 
+
+                                    Number of Customers who Purchased = DISTINCTCOUNT(FactSales[CustomerKey])
+                                    Revenue per Customer = DIVIDE([Total Revenue], [# of Customers who Purchased], BLANK())
+                                    Total Customers = COUNTROWS(DimCustomer)
   
+   ### Returns 
 
+                                    Quantity Returned = SUM(FactReturns[ReturnQuantity])
+                                    Return Rate = DIVIDE([Quantity Returned],[Quantity Ordered], BLANK())
+                                    Total Returns = COUNTROWS(FactReturns)
 
+   ### Adjusted Pricer (5%)
+
+                                    Adjusted Price = [AVG Retail Price]* (1+'Price Adjustment (%)'[Price Adjustment (%) Value])
+                                    Adjusted Profit = [Adjusted Revenue]-[Total Cost]
+                                    Adjusted Revenue = SUMX(FactSales, FactSales[OrderQuantity]*[Adjusted Price])
+                                    AVG Retail Price = AVERAGE(DimProduct[ProductPrice])
+
+   ### Time Intelligence 
+
+                                   Order YTD = CALCULATE([# of Orders], DATESYTD(DimDate[Date]))
+                                   PM Profit = CALCULATE([Net Profit], DATEADD(DimDate[Date],-1,MONTH))
+                                   PM Quantity Returned = CALCULATE([Quantity Returned], DATEADD(DimDate[Date],-1,MONTH))
+                                   PM Revenue = CALCULATE([Total Revenue], DATEADD(DimDate[Date],-1,MONTH) )
+                                   PM Order = CALCULATE([# of Orders], DATEADD(DimDate[Date],-1,MONTH))
