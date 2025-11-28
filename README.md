@@ -9,7 +9,7 @@ This project includes Sales Analysis &amp; Forecasting, Territory Analysis, Cust
 
  # A3.1 - Calculated Tables
 
-   ### Lookup Date Table
+   ### A3.1.1 Lookup Date Table
    
        let
           Source = {Number.From(List.Min(FactSales[OrderDate]))..Number.From(List.Max(FactSales[OrderDate]))},
