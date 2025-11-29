@@ -6,21 +6,21 @@ This project includes Sales Analysis &amp; Forecasting, Territory Analysis, Cust
 # A1 - Data Preparation (ETL & Load)
 # A2 - Data Modelling (Relationship)
 
-  # A2.1 - Model
+  ## A2.1 - Model
 
 ![Data Modelling](https://github.com/Morsshed/1.-Power-BI-E-Commerce-Sales-Analysis/blob/main/Data%20Modelling.png?raw=true) 
   
-  # A2.2 - Cardinality
+  ## A2.2 - Cardinality
 
 ![Table Cardinality](https://github.com/Morsshed/1.-Power-BI-E-Commerce-Sales-Analysis/blob/main/Table%20Cardinality.png?raw=true) 
 
-  # A2.3 - Filter Direction
+  ## A2.3 - Filter Direction
   
 ![Common Filter Direction](https://github.com/Morsshed/1.-Power-BI-E-Commerce-Sales-Analysis/blob/main/Common%20Filter%20Direction.png?raw=true)
 
 # A3 - DAX
 
- # A3.1 - Calculated Tables
+ ## A3.1 - Calculated Tables
 
    ### A3.1.1 Lookup Date Table
    
@@ -53,7 +53,7 @@ This project includes Sales Analysis &amp; Forecasting, Territory Analysis, Cust
       in
           #"Removed Columns"
  
- # A3.2 - Calculated Columns
+ ## A3.2 - Calculated Columns
 
                                   Age Group = 
                                     SWITCH(
@@ -81,9 +81,9 @@ This project includes Sales Analysis &amp; Forecasting, Territory Analysis, Cust
                                   Retail Price = RELATED(DimProduct[ProductPrice])
                                   Sale Value = FactSales[OrderQuantity] * FactSales[Retail Price]
 
- # A3.3 - Calculated Measures (KPI Measures)
+ ## A3.3 - Calculated Measures (KPI Measures)
  
-  ### Sales & Profits
+  #### Sales & Profits
   
                                    Total Sales = SUM(FactSales[Sale Value])
                                    Total Revenue = SUMX(FactSales,FactSales[OrderQuantity]*RELATED(DimProduct[ProductPrice]))
@@ -95,7 +95,7 @@ This project includes Sales Analysis &amp; Forecasting, Territory Analysis, Cust
                                    Revenue Target = [PM Revenue]*1.1
                                    Revenue Target Gap = [Total Revenue]-[Revenue Target]
 
-   ### Orders
+   #### Orders
    
                                     Number of Orders = DISTINCTCOUNT(FactSales[OrderNumber])
                                     AOV = DIVIDE([Total Revenue], [# of Orders], BLANK())
@@ -105,26 +105,26 @@ This project includes Sales Analysis &amp; Forecasting, Territory Analysis, Cust
                                     Price Per Item = DIVIDE([Total Revenue],[Quantity Ordered], BLANK())
                                     Quantity Ordered = sum(FactSales[OrderQuantity])
 
-   ### Customers 
+   #### Customers 
 
                                     Number of Customers who Purchased = DISTINCTCOUNT(FactSales[CustomerKey])
                                     Revenue per Customer = DIVIDE([Total Revenue], [# of Customers who Purchased], BLANK())
                                     Total Customers = COUNTROWS(DimCustomer)
   
-   ### Returns 
+   #### Returns 
 
                                     Quantity Returned = SUM(FactReturns[ReturnQuantity])
                                     Return Rate = DIVIDE([Quantity Returned],[Quantity Ordered], BLANK())
                                     Total Returns = COUNTROWS(FactReturns)
 
-   ### Adjusted Pricer (5%)
+   #### Adjusted Pricer (5%)
 
                                     Adjusted Price = [AVG Retail Price]* (1+'Price Adjustment (%)'[Price Adjustment (%) Value])
                                     Adjusted Profit = [Adjusted Revenue]-[Total Cost]
                                     Adjusted Revenue = SUMX(FactSales, FactSales[OrderQuantity]*[Adjusted Price])
                                     AVG Retail Price = AVERAGE(DimProduct[ProductPrice])
 
-   ### Time Intelligence 
+   #### Time Intelligence 
 
                                    Order YTD = CALCULATE([# of Orders], DATESYTD(DimDate[Date]))
                                    PM Profit = CALCULATE([Net Profit], DATEADD(DimDate[Date],-1,MONTH))
