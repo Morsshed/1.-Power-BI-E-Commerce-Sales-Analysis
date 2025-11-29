@@ -147,3 +147,29 @@ This project includes Sales Analysis &amp; Forecasting, Territory Analysis, Cust
                                    PM Quantity Returned = CALCULATE([Quantity Returned], DATEADD(DimDate[Date],-1,MONTH))
                                    PM Revenue = CALCULATE([Total Revenue], DATEADD(DimDate[Date],-1,MONTH) )
                                    PM Order = CALCULATE([# of Orders], DATEADD(DimDate[Date],-1,MONTH))
+
+# B - Analyses and Interactivities:
+  ## B1 - KPI and Trend Analysis
+  
+  ## B2 - Territory Analysis
+  ## B3 - Customer Analysis
+  ## B4 - Product Analysis
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
