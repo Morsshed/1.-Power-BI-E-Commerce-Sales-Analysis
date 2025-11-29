@@ -156,6 +156,8 @@ This project includes Sales Analysis &amp; Forecasting, Territory Analysis, Cust
   ## B3 - Customer Analysis
   ![Customer Analysis](https://github.com/Morsshed/1.-Power-BI-E-Commerce-Sales-Analysis/blob/main/Customer%20Analysis.png?raw=true)
   ## B4 - Product Analysis
+  ![Product Analysis](https://github.com/Morsshed/1.-Power-BI-E-Commerce-Sales-Analysis/blob/main/Product%20Analysis.png?raw=true)
+
 
 
 
