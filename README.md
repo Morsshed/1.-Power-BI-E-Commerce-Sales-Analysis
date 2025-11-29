@@ -9,9 +9,6 @@ This project includes Sales Analysis &amp; Forecasting, Territory Analysis, Cust
   # A2.1 - Model
 
 ![Data Modelling](https://github.com/Morsshed/1.-Power-BI-E-Commerce-Sales-Analysis/blob/main/Data%20Modelling.png?raw=true) 
-
-
-
   
   # A2.2 - Cardinality
 
