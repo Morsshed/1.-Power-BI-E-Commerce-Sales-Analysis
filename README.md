@@ -83,6 +83,39 @@ This project provides a structured analytical approach to uncover these issues a
  [Adventure Works Dataset (Kaggle)](https://www.kaggle.com/datasets/atulmittal199174/adventure-works-dataset)
 # A - Analysis Techniques:
 # A1 - Data Preparation (ETL & Load)
+
+### Data Cleaning
+
+Removed duplicate rows and unnecessary fields to streamline the dataset.
+
+Standardized column names, formats, and units for consistency across all tables.
+
+Converted text-based date fields into proper Date formats to support time-intelligence calculations.
+
+Handled missing values using appropriate strategies (imputation or exclusion).
+
+### Data Transformation
+
+Created new calculated columns such as Order Line Item, Retail Price, and Return Quantity to enrich analytical capabilities.
+
+Split and transformed fields where necessary to improve clarity and usability.
+
+Reassigned data types (Whole Number, Decimal, Text, Date) to ensure accurate aggregations and relationships.
+
+Applied conditional transformations to derive customer segments, product groupings, and territory regions.
+
+### Data Normalization
+
+Organized the model using a snowflake-style normalized structure:
+
+Product Categories → Subcategories → Products
+
+This reduced redundancy and improved query performance.
+
+Consolidated customer attributes (Age, Gender, Income, Education, etc.) into a dedicated DimCustomer table instead of storing them repeatedly in sales records.
+
+Centralized date-related fields (Year, Month, Quarter, Week) into DimDate to enable standardized time-based analysis.
+
 # A2 - Data Modelling (Relationship)
 
                                          Fact Tables:
