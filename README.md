@@ -9,7 +9,7 @@ The E-Commerce Sales Analytics Dashboard aims to address several key business ch
 
 The primary business problems addressed in this project include:
 
-Declining revenue per customer at the start of each month, indicating potential behavioral or promotional timing gaps.
+✔️ Declining revenue per customer at the start of each month, indicating potential behavioral or promotional timing gaps.
 
 High return rates in specific product categories, especially Shorts, which negatively impact profit margins and customer satisfaction.
 
