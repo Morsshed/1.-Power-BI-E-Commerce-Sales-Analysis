@@ -11,11 +11,17 @@ The E-Commerce Sales Analytics Dashboard aims to address several key business ch
 The primary business problems addressed in this project include:
 
 ✔️ Declining revenue per customer at the start of each month, indicating potential behavioral or promotional timing gaps.
+
 ✔️ High return rates in specific product categories, especially Shorts, which negatively impact profit margins and customer satisfaction.
+
 ✔️ Regional sales imbalance, with North America outperforming other regions, highlighting untapped market potential in Europe, Asia-Pacific, and South America.
+
 ✔️ Dependence on a small group of high-performing products, increasing risk if demand shifts.
+
 ✔️ Suboptimal customer retention, where many customers fall into “Potential Loyalists” or “At-Risk” segments instead of moving into loyal or champion categories.
+
 ✔️ Insufficient demographic targeting, as the business lacks actionable insights into how age, gender, and marital status influence purchase behavior.
+
 ✔️ Inefficient forecasting and inventory allocation, causing fluctuations in demand planning.
 
 This project provides a structured analytical approach to uncover these issues and enables the business to make informed decisions regarding pricing, product strategy, customer engagement, and market expansion.
