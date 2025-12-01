@@ -82,7 +82,7 @@ This project provides a structured analytical approach to uncover these issues a
  ## v. Data Source
  [Adventure Works Dataset (Kaggle)](https://www.kaggle.com/datasets/atulmittal199174/adventure-works-dataset)
 # A - Analysis Techniques:
-# A1 - Data Preparation (ETL & Load)
+# A1 - Data Preparation (ETL & Normalization)
 
 ### Data Cleaning
 
@@ -265,7 +265,8 @@ This project provides a structured analytical approach to uncover these issues a
   ## B4 - Product Analysis
   ![Product Analysis](https://github.com/Morsshed/1.-Power-BI-E-Commerce-Sales-Analysis/blob/main/Product%20Analysis.png?raw=true)
 
-
+# Conclusion
+I truly enjoyed working on this project from beginning to end. Experiencing the full process provided valuable insights into both the data and the visuals. I look forward to tackling similar projects in the future and exploring even more complex datasets.
 
 
 
