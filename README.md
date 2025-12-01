@@ -3,27 +3,23 @@ This project includes Sales Analysis &amp; Forecasting, Territory Analysis, Cust
 
 # Analysis Details
  ## i. Business Case
-🚩 Problem Statement
+ 
+🚩 Problem Statement:
 
 The E-Commerce Sales Analytics Dashboard aims to address several key business challenges related to sales performance, customer behavior, product profitability, and regional growth. Despite generating strong revenue and profit, the organization faces gaps in customer retention, uneven regional performance, and product return issues that impact overall business efficiency. To support data-driven decision-making, the project focuses on identifying underlying issues and converting raw transactional data into meaningful insights.
 
 The primary business problems addressed in this project include:
 
 ✔️ Declining revenue per customer at the start of each month, indicating potential behavioral or promotional timing gaps.
-
-High return rates in specific product categories, especially Shorts, which negatively impact profit margins and customer satisfaction.
-
-Regional sales imbalance, with North America outperforming other regions, highlighting untapped market potential in Europe, Asia-Pacific, and South America.
-
-Dependence on a small group of high-performing products, increasing risk if demand shifts.
-
-Suboptimal customer retention, where many customers fall into “Potential Loyalists” or “At-Risk” segments instead of moving into loyal or champion categories.
-
-Insufficient demographic targeting, as the business lacks actionable insights into how age, gender, and marital status influence purchase behavior.
-
-Inefficient forecasting and inventory allocation, causing fluctuations in demand planning.
+✔️ High return rates in specific product categories, especially Shorts, which negatively impact profit margins and customer satisfaction.
+✔️ Regional sales imbalance, with North America outperforming other regions, highlighting untapped market potential in Europe, Asia-Pacific, and South America.
+✔️ Dependence on a small group of high-performing products, increasing risk if demand shifts.
+✔️ Suboptimal customer retention, where many customers fall into “Potential Loyalists” or “At-Risk” segments instead of moving into loyal or champion categories.
+✔️ Insufficient demographic targeting, as the business lacks actionable insights into how age, gender, and marital status influence purchase behavior.
+✔️ Inefficient forecasting and inventory allocation, causing fluctuations in demand planning.
 
 This project provides a structured analytical approach to uncover these issues and enables the business to make informed decisions regarding pricing, product strategy, customer engagement, and market expansion.
+
  ## ii. Snapshots
  ![Snapshot of Sales Analytics Dashboard](https://github.com/Morsshed/1.-Power-BI-E-Commerce-Sales-Analysis/blob/main/Snapshot%20of%20Sales%20Analytics%20Dashboard.jpeg?raw=true)
 
