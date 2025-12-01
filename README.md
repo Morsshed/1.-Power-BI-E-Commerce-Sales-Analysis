@@ -7,6 +7,22 @@ This project includes Sales Analysis &amp; Forecasting, Territory Analysis, Cust
  ![Snapshot of Sales Analytics Dashboard](https://github.com/Morsshed/1.-Power-BI-E-Commerce-Sales-Analysis/blob/main/Snapshot%20of%20Sales%20Analytics%20Dashboard.jpeg?raw=true)
 
  ## iii. Dashboard Features
+
+                             Dynamic Features:
+                                              1. Tooltips : Matrix in Line Chart
+                                              2. Drill Through : Table Chart with Gauge Charts
+                                              3. Drill Down : Stacked Bar Charts
+                                              4. Filed Parameter :                   
+                             Analytical Features:
+                                              1. KPI Cards : Total Orders, Total Revenue, Net Profit, Profit Margin and Rate of Return
+                                              2. Stacked Bard Chart: Number of Orders by Category and Sub Category
+                                              3. Line Charts : Trend and Forecasting, Net Profit Vs Adjusted Profit
+                                              4. Table chart : Top 10 Products by Profit, Sales by Continents/Country/Regions
+                                              5. Gauge Charts : Tagrgets VS Profit/Order/Revenue
+                                              6. Map : Country by Total Revenue
+                                              7. Pie Charts : Customers' Demographic Analyses
+                                              8. Matrix : Customer Segmentation
+                                              
  ## iv. Insights and Recommendation
  ## v. Data Source
 # A - Analysis Techniques:
