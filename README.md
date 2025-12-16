@@ -7,7 +7,7 @@ This project includes Sales Analysis &amp; Forecasting, Territory Analysis, Cust
 # Analysis Details
  ## i. Business Case
  
-🚩 Problem Statement:
+ ## Problem Statement:
 
 The E-Commerce Sales Analytics Dashboard aims to address several key business challenges related to sales performance, customer behavior, product profitability, and regional growth. Despite generating strong revenue and profit, the organization faces gaps in customer retention, uneven regional performance, and product return issues that impact overall business efficiency. To support data-driven decision-making, the project focuses on identifying underlying issues and converting raw transactional data into meaningful insights.
 
@@ -30,7 +30,7 @@ The primary business problems addressed in this project include:
 This project provides a structured analytical approach to uncover these issues and enables the business to make informed decisions regarding pricing, product strategy, customer engagement, and market expansion.
 
  ## ii. Snapshots
- ![Snapshot of Sales Analytics Dashboard](https://github.com/Morsshed/1.-Power-BI-E-Commerce-Sales-Analysis/blob/main/Snapshot%20of%20Sales%20Analytics%20Dashboard.jpeg?raw=true)
+ ![Sales and Territory Analysis](https://raw.githubusercontent.com/Morsshed/PowerBI-Sales-and-Market-Analyses/main/Sales%20and%20Territory%20Analysis.jpeg)
 
  ## iii. Dashboard Features
 
